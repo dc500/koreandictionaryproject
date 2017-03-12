@@ -78,9 +78,9 @@ test   0.078GB
 ```
 
 ## How to Import Json file into MongoDB database
+```
 
-
-"mongoimport --db databasename --collection collectioname --type json --file filenamejson --jsonArray
+$ mongoimport --db databasename --collection collectioname --type json --file filenamejson --jsonArray
 
 ```
 
