@@ -22,7 +22,8 @@ Create the database folder. MongoDB store data into the /data/db folder, you nee
 $ sudo mkdir -p /data/db
 $ whoami
 (yourusername)
-$ sudo chown (yourusername)/data/db```
+$ sudo chown (yourusername)/data/db
+```
 
 Next add mongodb/bin to $PATH. You can use Vim or Nano (I hate VIM)
 
@@ -39,7 +40,8 @@ NANO:
 ```$ cd ~
 $ pwd
 /Users/agabardo
-$ nano .bash_profile```
+$ nano .bash_profile
+```
 
 Add
 ```
@@ -54,7 +56,8 @@ When you see the message: ‘waiting for connections on port 27017′ means that
 Step 1: List Databases – First check the current databases in our system.
 
  ```# mongo
-> show dbs; ```
+> show dbs; 
+```
 
 You should see
  ```admin  (empty)
@@ -66,11 +69,12 @@ To create database with name "databasename", just run following command and save
 
 ```> use databasename;```
 ```> s = { Name : "collection name" }```
-```> db.testData.insert( s );```
+```> db.testData.insert( s );
+```
 
 Verify new database – 
 Now if you list the databases, you will see the new database will be their with name databasename. Of course, in during a real project "databasename" would be the name of your actual database. Same for collection.
-
+```
 > show dbs;
 admin  (empty)
 local  0.078GB
