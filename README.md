@@ -16,13 +16,14 @@ Visit [kdict.org](http://kdict.org) to use the dictionary, download the raw data
 Here's how to get a local copy of KDict running for development purposes:
 
 1. Download the source with ```$ git clone git://github.com/bhumphreys/kdict.git```
-2. Use BREW to Install [Node](http://nodejs.org/), [NPM](http://npmjs.org/) and [MongoDB](http://www.mongodb.org/)
+2. Use BREW to install [Node](http://nodejs.org/), [NPM](http://npmjs.org/) and [MongoDB](http://www.mongodb.org/)
 ```$ brew install nodejs``` , ```$ brew install npm```, ```$ bre install mongodb```
 3. Install the required NPM packages with ```npm install``` in the git repo.
 4. Start an instance of the MongoDB server ```mongod```
 5. Download the [latest data dump](http://kdict.org/developers/download) and import into a db/collection called ``kdict``/``entries`` using [```mongoimport```](http://www.mongodb.org/display/DOCS/Import+Export+Tools#ImportExportTools-mongoimport)
-6. Run the KDict node app with ```coffee app.coffee```
-7. View the site at http://localhost:3000
+6.  Use BREW to install Coffee  ```brew install homebrew/science/t-coffee ```
+7.Run the KDict node app with ```coffee app.coffee```
+8. View the site at http://localhost:3000
 
 
 ## Data
