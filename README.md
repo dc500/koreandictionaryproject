@@ -22,7 +22,7 @@ Here's how to get a local copy of KDict running for development purposes:
 4. Start an instance of the MongoDB server ```mongod```
 5. Download the [latest data dump](http://kdict.org/developers/download) and import into a db/collection called ``kdict``/``entries`` using [```mongoimport```](http://www.mongodb.org/display/DOCS/Import+Export+Tools#ImportExportTools-mongoimport)
 6.  Use BREW to install Coffee  ```brew install homebrew/science/t-coffee ```
-7.Run the KDict node app with ```coffee app.coffee```
+7. Run the KDict node app with ```coffee app.coffee```
 8. View the site at http://localhost:3000
 
 
