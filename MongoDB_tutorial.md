@@ -1,5 +1,5 @@
 ## Quick Tutorial 
-Installing and running MongoDB and importing Json file on Mac OSX for Newbies
+###Installing and running MongoDB and importing Json file on Mac OSX for Newbies
 
 
 ```
