@@ -87,7 +87,6 @@ $ mongoimport --db databasename --collection collectioname --type json --file fi
 #DONE! 
 
 
-## 2017 Credits
-- Code: [Daitona Carter](http://daitonacarter.com/)
-- Data: updating
-- Illustration: updating
+
+- Tutorial by: [Daitona Carter](http://daitonacarter.com/)
+
