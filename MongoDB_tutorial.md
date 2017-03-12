@@ -46,29 +46,36 @@ $ nano .bash_profile
 Add
 ```
 export MONGO_PATH=/usr/local/mongodb
-export PATH=$PATH:$MONGO_PATH/bin```
+export PATH=$PATH:$MONGO_PATH/bin
+```
 
-In another terminal window and start MongoDB with ```$ mongod```. (If it doesn't work try using ```$ sudo mongod```).
+In another terminal window and start MongoDB with 
+```$ mongod```. (If it doesn't work try using ```$ sudo mongod```).
 
-When you see the message: ‘waiting for connections on port 27017′ means that MongoDB is running. Next, open another terminal and type ```$ mongo```
+When you see the message: ‘waiting for connections on port 27017′ means that MongoDB is running. Next, open another terminal and type ```$ mongo
+```
 
 #### Creating the database so we can import
 Step 1: List Databases – First check the current databases in our system.
 
- ```# mongo
-> show dbs; 
+ ```$ mongo 
+ ```
+ ```> show dbs; 
 ```
 
 You should see
  ```admin  (empty)
 local  0.078GB
-test   0.078GB```
+test   0.078GB
+```
 
 ## How to Create a New Mongodb Database
 To create database with name "databasename", just run following command and save a single record in database. After saving your first example, you will see that new database has been created.
 
-```> use databasename;```
-```> s = { Name : "collection name" }```
+```> use databasename;
+```
+```> s = { Name : "collection name" }
+```
 ```> db.testData.insert( s );
 ```
 
