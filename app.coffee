@@ -12,6 +12,7 @@ fs             = require("fs")
 less           = require("less")
 
 entry          = require("./models/entry")
+static         = require(“./controllers/static”)
 update         = require("./models/update")
 tag            = require("./models/tag")
 user           = require("./models/user")
@@ -152,20 +153,20 @@ app.post '/login/reset',        user.sendResetEmail
 app.get  '/login/reset/:token', user.showResetForm
 app.post '/login/reset/:token', user.resetPassword
 
-static = require('./controllers/static')
-app.get '/404/?',                   static.notFound
-app.get '/data/:file(*)',           static.data
-app.get '/about/?',                 static.about
-app.get '/contribute/?',            static.contribute
-app.get '/contribute/tagged?',      static.tagged
+stat = require('./controllers/stat')
+app.get '/404/?',                   stat.notFound
+app.get '/data/:file(*)',           stat.data
+app.get '/about/?',                 stat.about
+app.get '/contribute/?',            stat.contribute
+app.get '/contribute/tagged?',      stat.tagged
 
-app.get '/developers/contribute/?', static.developers
-app.get '/developers/download/?',   static.download
+app.get '/developers/contribute/?', stat.developers
+app.get '/developers/download/?',   stat.download
 
 entries = require('./controllers/entries')
 app.get  '/entries/:id.:format?', entries.showById
 
-# PROBLEM: What if we want to find all entries for 'new'
+#PROBLEM: What if we want to find all entries for 'new'
 app.get  '/entries/new/?',             requireLogin, entries.new
 app.post '/entries/?',                 requireLogin, entries.create
 app.post '/entries/create_raw/?',      entries.create_raw
